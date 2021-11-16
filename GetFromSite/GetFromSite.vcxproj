@@ -167,7 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\LIB.Utils\!Refresh.bat" />
-    <None Include="GetFromSite.conf" />
+    <None Include="getfromsite.conf" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Readme.txt" />

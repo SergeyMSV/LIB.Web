@@ -1,0 +1,52 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: cpp build active file",
+            "command": "/usr/bin/arm-linux-gnueabihf-g++",
+            "args": [
+				"-std=c++17",
+                "-g",
+				"-Wall",
+				"-I${workspaceFolder}/",
+				"-I${workspaceFolder}/Dev",
+				"-I${workspaceFolder}/../LIB.Utils",
+				"-I/usr/local/boost_1_77_0_ARM",
+				"-L/usr/local/boost_1_77_0_ARM/stage/lib",
+				"-L/usr/arm-linux-gnueabihf/lib",
+				"Dev/devSettings.cpp",
+                "main.cpp",
+				"../LIB.Utils/utilsLog.cpp",
+				"../LIB.Utils/utilsPacketNMEAType.cpp",
+				"../LIB.Utils/utilsShell.cpp",
+                "-o",
+                "${workspaceFolder}/getfromsite",
+				"-lpthread",
+				"-lboost_filesystem"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+			"dependsOn":[
+				"ConfigCopy"
+			]
+        },
+		{
+			"label": "ConfigCopy",
+			"command": "cp",
+			"args": [
+				"-f",
+				"getfromsite.conf",
+				"."
+			]
+		}
+    ]
+}

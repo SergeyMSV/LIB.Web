@@ -46,7 +46,7 @@
     <None Include="..\LIB.Utils\!Refresh.bat">
       <Filter>LIB.Utils</Filter>
     </None>
-    <None Include="GetFromSite.conf" />
+    <None Include="getfromsite.conf" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Readme.txt" />

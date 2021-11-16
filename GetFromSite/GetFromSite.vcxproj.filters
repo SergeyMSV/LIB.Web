@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Dev\devSettings.cpp">
+      <Filter>Dev</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LIB.Utils\utilsDBNavi.cpp">
+      <Filter>LIB.Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="DataParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LIB.Utils\utilsWebHttpsReqSync.cpp">
+      <Filter>LIB.Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2e6b605f-22cd-4bbb-be08-812a85972ce2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dev">
+      <UniqueIdentifier>{1b0b5acb-14ec-4659-9726-5c1604bd5252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LIB.Utils">
+      <UniqueIdentifier>{6af48238-f977-4193-bd22-7bb9f506613c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="devConfig.h" />
+    <ClInclude Include="Dev\devSettings.h">
+      <Filter>Dev</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LIB.Utils\utilsBase.h">
+      <Filter>LIB.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LIB.Utils\utilsDBNavi.h">
+      <Filter>LIB.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="libConfig.h" />
+    <ClInclude Include="..\LIB.Utils\utilsWebHttpsReqSync.h">
+      <Filter>LIB.Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LIB.Utils\!Refresh.bat">
+      <Filter>LIB.Utils</Filter>
+    </None>
+    <None Include="GetFromSite.conf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
+  </ItemGroup>
+</Project>
